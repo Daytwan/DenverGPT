@@ -1,79 +1,36 @@
-# DenverGPT Website Plan
+# DenverGPT Production Redesign Plan
+
+Status: approved on 2026-08-13.
 
 ## Goal
 
-Design and build a polished, responsive lead-generation website for DenverGPT, a Denver-based AI workflow consultancy that automates repetitive business work and reduces operating costs.
+Rebuild the existing single-page Vite/React site around the thesis **“Practical systems, clearly explained.”** Replace the current mountain/5280/electric-blue AI aesthetic with a warm, restrained editorial system focused on automation, data workflows, integrations, and custom internal tools.
 
-## Assumptions Requiring Approval
+Keep the existing React/Vite architecture and in-progress Cloudflare configuration. Use `https://denvergpt.com` for canonical metadata. Preserve all existing uncommitted work.
 
-- Build a single-page marketing site in a lightweight Vite/React stack unless the repository reveals another preferred stack.
-- Use original art direction and local CSS/SVG/HTML visuals; do not depend on stock photography or paid assets.
-- Primary conversion action: book a free workflow audit through an on-page contact form.
-- Contact form is a polished front-end interaction only until a form destination, email service, or backend is supplied.
-- Voice: direct, practical, locally confident, and credible rather than futuristic hype.
+## Implementation
 
-## Visual Thesis
+- Recompose the homepage as: accessible header, concrete hero, services, operational problems/outcomes, engagement process, representative workflows, factual founder credibility, honest contact state, and complete footer.
+- Make “Discuss a project” the dominant CTA without simulating submission or inventing an email. Until a destination exists, clearly state that the inquiry channel is not yet published.
+- Remove unsupported promises, the “free workflow audit,” implied client outcomes, the invented mountain mark, 5280 language, topography, glowing workflow graphics, tiny uppercase text, fake interactivity, and unsafe reveal behavior.
+- Build centralized tokens for warm neutrals, known teal `#247D90`, typography, spacing, widths, borders, radii, focus, and motion. Do not approximate the unavailable coral/gold brand colors or petal geometry.
+- Add an accessible mobile navigation disclosure with Escape, outside-click, focus restoration, and background-scroll locking.
+- Keep the static React SPA and split the monolith only into useful layout/content components. Add no routing, server, CMS, analytics, state, or animation framework.
+- Add factual canonical, Open Graph, social, local-business structured data, sitemap, robots, manifest, theme metadata, and a typography-only social preview that does not counterfeit the missing logo.
+- Add Cloudflare-compatible security headers and complete developer documentation.
 
-“Mile-high precision”: a dark obsidian and warm alpine-white composition with electric glacier-blue accents, oversized editorial typography, a Denver contour-line motif, and a kinetic workflow visual that turns operational chaos into one clear automated path.
+## Quality Gates
 
-## Content Plan
+- Add ESLint, JavaScript type checking, Vitest, React Testing Library, Playwright, axe accessibility checks, link/metadata checks, and Lighthouse automation.
+- Use red-green-refactor for navigation, mobile-menu behavior, CTA routing, honest contact messaging, metadata, and accessibility-critical interactions.
+- Inspect `320x568`, `375x812`, `430x932`, `768x1024`, `1024x768`, `1280x800`, `1440x900`, and a desktop viewport near 1920 pixels.
+- Require passing build, lint, type-check, unit/component tests, E2E, link checks, and zero serious or critical axe violations; meet the requested Lighthouse thresholds where locally measurable.
+- Complete an independent adversarial review covering code, visual UX, accessibility, SEO, performance, and security, then fix all material findings.
 
-1. **Hero — Make busywork disappear**
-   - DenverGPT brand, outcome-first promise, concise explanation, and primary CTA.
-   - Dominant full-bleed animated workflow/topography composition.
-2. **Proof — Show the operational value**
-   - Outcome language around hours recovered, errors reduced, and faster response times.
-   - No invented client logos, testimonials, or unsupported hard performance claims.
-3. **Services — What DenverGPT automates**
-   - Lead handling and follow-up.
-   - Document/data processing and reporting.
-   - Internal operations and customer support workflows.
-4. **Process — From bottleneck to working system**
-   - Audit, design, build, launch/iterate.
-5. **Use cases — Concrete before/after stories**
-   - A few short, clearly illustrative examples that make the service understandable.
-6. **Final CTA — Free workflow audit**
-   - Low-friction form and clear expectation for what happens next.
-7. **Footer**
-   - Denver positioning, contact details if supplied, and basic navigation.
+## Approved Assumptions and External Limitations
 
-## Interaction Thesis
-
-- A restrained hero entrance sequence establishes brand hierarchy and makes the workflow visual assemble itself.
-- Scroll-linked path/progress movement turns scattered manual tasks into a single automated output.
-- Purposeful hover and focus transitions sharpen service links, buttons, and the audit form without ornamental motion.
-- Respect `prefers-reduced-motion` and preserve complete keyboard accessibility.
-
-## Engineering Plan
-
-1. Scaffold the smallest maintainable app structure and define brand tokens.
-2. Build the semantic page and original visual system.
-3. Add responsive behavior, interactions, reduced-motion support, and accessible states.
-4. Add lightweight form validation and a clear non-submitting/demo behavior unless a live destination is provided.
-5. Run the repository's lint/build checks.
-6. Review the final diff for correctness and unintended changes.
-7. Serve locally and use the requested Chrome integration for direct visual and interaction checks at desktop and mobile widths.
-8. Fix material issues found in that review, rerun the affected checks, and deliver the finished site.
-
-## Delegation Plan
-
-- One implementation agent will own the page build against this approved specification.
-- One review agent will independently inspect the finished code and test coverage for actionable defects.
-- The primary agent will own integration, browser verification, fixes, and final acceptance.
-
-## Verification / Done Condition
-
-- Production build succeeds.
-- Relevant lint/type checks succeed if configured.
-- No critical browser console errors on the tested page.
-- Chrome review confirms hero hierarchy, navigation, CTA/form interaction, overflow, legibility, and responsive layout at common desktop and mobile sizes.
-- Keyboard focus and reduced-motion behavior are present.
-- No fabricated customer evidence or unsupported guaranteed savings claims appear.
-- The working site and all source files are present in this repository.
-
-## Out of Scope Without Separate Approval
-
-- Production deployment or DNS changes.
-- Live email/form integrations, CRM connections, analytics, credentials, or paid services.
-- Fabricated client work, testimonials, or precise ROI statistics.
-
+- `https://denvergpt.com` is the production origin.
+- The authoritative logo master is unavailable by user choice. Do not redraw or approximate it. Exact logo integration, coral/gold sampling, official favicon derivatives, and logo-based social artwork remain externally blocked.
+- No verified email address or form endpoint is available. Do not collect or pretend to deliver visitor data; activating project inquiries remains externally blocked.
+- Do not introduce clients, testimonials, statistics, measured outcomes, addresses, phone numbers, certifications, or partnerships.
+- Do not deploy or change DNS or production data.

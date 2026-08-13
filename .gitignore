@@ -1,0 +1,16 @@
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+
+# installed dependencies
+node_modules/
+
+# local verification artifacts
+.playwright-cli/
+playwright-report/
+test-results/
+.lighthouse/
+coverage/

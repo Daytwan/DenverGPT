@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">DenverGPT</title>
+  <desc id="description">Practical systems for real work in Denver, Colorado.</desc>
+  <rect width="1200" height="630" fill="#f7f2e8"/>
+  <path d="M0 104H1200M0 526H1200" stroke="#17383e" stroke-opacity=".18"/>
+  <path d="M708 93c124 0 114 222 251 222 80 0 117-49 180-126M708 315h251M708 537c124 0 114-222 251-222" fill="none" stroke="#247d90" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="959" cy="315" r="54" fill="#f7f2e8" stroke="#247d90" stroke-width="3"/>
+  <circle cx="959" cy="315" r="9" fill="#247d90"/>
+  <text x="72" y="120" fill="#155563" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="-1.5">DenverGPT</text>
+  <text x="72" y="276" fill="#17383e" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-3">Practical systems</text>
+  <text x="72" y="354" fill="#17383e" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-3">for real work.</text>
+  <text x="72" y="476" fill="#586d70" font-family="Arial, sans-serif" font-size="25">Automation · Data workflows · Internal tools · Responsible AI</text>
+  <text x="72" y="560" fill="#155563" font-family="monospace" font-size="20">DENVER, COLORADO</text>
+</svg>
