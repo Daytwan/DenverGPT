@@ -8,14 +8,14 @@ export const navigation = [
 export const services = [
   {
     number: '01',
-    title: 'Automation & integrations',
+    title: 'Automation',
     description:
       'Connect intake, approvals, notifications, and recurring tasks so information moves without another round of copying and pasting.',
     deliverables: ['Workflow mapping', 'API connections', 'Python automation'],
   },
   {
     number: '02',
-    title: 'Data & reporting',
+    title: 'Data',
     description:
       'Collect, clean, and organize operational data into dependable reports, dashboards, and decision-ready views.',
     deliverables: ['Data cleanup', 'Reporting pipelines', 'Focused dashboards'],
